@@ -3,6 +3,31 @@ h1 {
     text-align:center;
 }
 body {
-    background-color: peachpuff;
     background-image: url('background1.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+}
+@media (max-width: 300px) {
+    section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+main {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
 }
